@@ -28,20 +28,23 @@
     <div class="hero-query" id="heroQuery">
       <span id="queryText"></span><span class="cursor"></span>
     </div>
-    <h1 class="hero-title">
-      <span class="rows">Rows</span><br>
-      <span class="amp">&amp;</span><br>
-      <span class="columns">Columns</span>
-    </h1>
-    <p class="hero-subtitle">
-      A practitioner-first conference on the architecture question that won't go away:
-      <em>OLTP and OLAP, together or apart?</em>
-      Real systems, real tradeoffs, real numbers — from engineers who've lived them.
-    </p>
+  <div style="display: flex; align-items: center; gap: 3rem; margin-bottom: 1.5rem;">
+      <div>
+        <h1 class="hero-title">
+          <span class="rows" style="color: var(--white);">Rows &amp; Columns Summit</span><br>
+        </h1>
+        <p class="hero-subtitle">
+          A practitioner-first conference on the architecture question that won't go away:
+          <em style="color: var(--white);">OLTP and OLAP, together or apart?</em>
+          Real systems, real tradeoffs, real numbers — from engineers who've lived them.
+        </p>
+      </div>
+      <img src="logo.png" alt="Rows and Columns Summit logo" style="width: 500px; height: 500px; object-fit: contain; flex-shrink: 0;">
+    </div>
     <div class="hero-meta">
       <div class="hero-meta-item">
         <span class="hero-meta-label">Date</span>
-        <span class="hero-meta-value" style="color: var(--gold);">September 24, 2026</span>
+        <span class="hero-meta-value" style="color: var(--gold);">September 24</span>
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">Venue</span>
@@ -49,15 +52,20 @@
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">Format</span>
-        <span class="hero-meta-value" style="color: var(--teal);">Single-track · 10am–7pm</span>
-      </div>
-      <div class="hero-meta-item">
-        <span class="hero-meta-label">Admission</span>
-        <span class="hero-meta-value accent">Free · Application required</span>
+        <span class="hero-meta-value" style="color: var(--gold);">Single-track · 10am–7pm</span>
       </div>
     </div>
     <div class="hero-actions">
-      <a href="#apply" class="btn-primary">Apply to attend →</a>
+      <a
+        href="https://luma.com/event/evt-bQcR6tDKi8OmTXu"
+        class="luma-checkout--button"
+        style="color: var(--teal);"
+        data-luma-action="checkout"
+        data-luma-event-id="evt-bQcR6tDKi8OmTXu"
+      >
+      Register for Event
+      </a>
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
       <a href="#program" class="btn-secondary">See the program</a>
     </div>
   </div>
@@ -67,7 +75,7 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div class="stat">
-      <div class="stat-num" style="color: var(--coral);">300<span style="color: var(--coral);">–400</span></div>
+      <div class="stat-num" style="color: var(--coral);">400+</div>
       <div class="stat-label">Curated practitioners</div>
     </div>
     <div class="stat">
@@ -90,7 +98,7 @@
   <div class="section-inner">
     <div class="section-eyebrow reveal">The thesis</div>
     <h2 class="section-title reveal">Purpose-built beats converged.<br><span style="color: var(--teal);">Properly connected</span> beats both.</h2>
-    <p class="section-body reveal" style="max-width: 820px; margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.85;">
+    <p class="section-body reveal" style="max-width: 900px; margin-top: 1.5rem; font-size: 1.05rem; line-height: 1.85;">
       The convergence of OLTP and OLAP is a generational architectural shift, not a niche trend. You can see data teams at any scale keep arriving at the same conclusion: transactional and analytical workloads need to work together. Even though they have fundamentally different physical requirements, data systems of the future will need to optimize for both in a single engine means compromising on both. <em>Is hybrid architecture the way? Open table formats? CDC? Purpose built systems?</em> A new paradigm of data architecture is emerging to merge OLTP and OLAP into purpose-built systems and there are a lot of approaches and even more tradeoffs. The era of AI is pushing the topic to the top of everyone's priority list. This event brings together <em>data practitioners and enthusiasts</em> to discuss the world of rows and columns, data systems for both transactions and analytics.
     </p>
   </div>
@@ -101,14 +109,14 @@
   <div class="section-inner">
     <div class="section-eyebrow reveal">September 24, 2026</div>
     <h2 class="section-title reveal">The <span style="color: var(--coral);">Program</span></h2>
-    <p class="section-body reveal">Single-track from open to close. No breakouts, no competing sessions. Every attendee hears the same thing — which means the conversations that follow mean more.</p>
+    <p class="section-body reveal">Single-track from open to close.</p>
     <div class="program-grid">
       <div class="program-row reveal">
         <div class="program-time">10:00am</div>
         <div class="program-content">
           <div class="program-tag tag-keynote">Keynote</div>
           <div class="program-title">Opening Keynote</div>
-          <div class="program-desc">Framing the convergence debate. An invited speaker setting the intellectual stakes for the day.</div>
+          <div class="program-desc">An exciting speaker setting the stage for the day</div>
         </div>
       </div>
       <div class="program-row reveal">
@@ -116,7 +124,7 @@
         <div class="program-content">
           <div class="program-tag tag-talks">CFP Talks</div>
           <div class="program-title">Practitioner Talks</div>
-          <div class="program-desc">3–4 talks selected from an open CFP (blind review). 30 minutes each. War stories, real architectures, decisions you'd make differently next time.</div>
+          <div class="program-desc">3–4 talks selected from our open CFP, 30 minutes each. Educational and inspiring, with real architectures, and real stories.</div>
         </div>
       </div>
       <div class="program-row reveal">
@@ -124,7 +132,7 @@
         <div class="program-content">
           <div class="program-tag tag-social">Lunch</div>
           <div class="program-title">Lunch on the Outdoor Terrace</div>
-          <div class="program-desc">Food served outside. Architecture wall and controversy board inside. A wonderful hour to network and get to know fellow attendees.</div>
+          <div class="program-desc">A wonderful hour to network and get to know fellow attendees, plus good food.</div>
         </div>
       </div>
       <div class="program-row reveal">
@@ -132,7 +140,7 @@
         <div class="program-content">
           <div class="program-tag tag-panel">Fireside Panel</div>
           <div class="program-title">The Convergence Debate</div>
-          <div class="program-desc">Vendor leaders from across the ecosystem in conversation. Convergence or best-of-breed — a moderated debate, not a product pitch.</div>
+          <div class="program-desc">Vendor leaders from across the ecosystem in conversation. With a spicy moderated debate.</div>
         </div>
       </div>
       <div class="program-row reveal">
@@ -146,9 +154,9 @@
       <div class="program-row reveal">
         <div class="program-time">5:00pm</div>
         <div class="program-content">
-          <div class="program-tag tag-keynote">AMA</div>
-          <div class="program-title">Live AMA</div>
-          <div class="program-desc">Open questions via Slido. No moderator, no filter, no slides. The audience asks what they actually want to know from one of the sharpest minds in databases.</div>
+          <div class="program-tag tag-keynote">Wrap up and voting</div>
+          <div class="program-title">Fun ending</div>
+          <div class="program-desc"> Details to be announced</div>
         </div>
       </div>
       <div class="program-row reveal">
@@ -156,7 +164,7 @@
         <div class="program-content">
           <div class="program-tag tag-social">Happy Hour</div>
           <div class="program-title">Evening Reception</div>
-          <div class="program-desc">Outdoor terrace and indoor sponsor tables. Closing vote — did anyone change their mind? — then drinks until 7pm.</div>
+          <div class="program-desc">Outdoor terrace and indoor sponsor tables. Great way to wrap up the day. </div>
         </div>
       </div>
     </div>
@@ -168,12 +176,12 @@
   <div class="section-inner">
     <div class="section-eyebrow reveal">Confirmed & invited</div>
     <h2 class="section-title reveal"><span style="color: var(--gold);">Speakers</span></h2>
-    <p class="section-body reveal">Practitioners, researchers, and engineers with real things to say. No vendor pitches from the stage. Speaker lineup updates as confirmations come in.</p>
+    <p class="section-body reveal">Practitioners, researchers, and engineers with real things to say. Speaker lineup updates as confirmations come in.</p>
     <div class="speakers-coming-soon reveal" style="margin-top: 3.5rem; padding: 4rem 2rem; background: var(--navy-mid); border-radius: 8px; border: 1px dashed rgba(46,196,196,0.2); text-align: center;">
       <div style="font-family: 'Courier New', monospace; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem;">Lineup</div>
       <div style="font-size: 1.75rem; font-weight: 800; color: var(--white); margin-bottom: 0.75rem;">Coming soon</div>
       <div style="font-size: 1rem; color: var(--text-muted); max-width: 480px; margin: 0 auto 2rem; line-height: 1.65;">
-        Speakers will be announced as confirmations come in. We're building a room of practitioners with real things to say — no vendor pitches from the stage.
+        Speakers will be announced as confirmations come in. 
       </div>
       <a href="#" style="font-family: 'Courier New', monospace; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal); text-decoration: none; border-bottom: 1px solid rgba(46,196,196,0.3); padding-bottom: 2px;">Submit a talk via CFP →</a>
     </div>
@@ -186,7 +194,7 @@
   <div class="section-inner">
     <div class="section-eyebrow reveal">Organising committee</div>
     <h2 class="section-title reveal">The <span style="color: var(--rose);">Board</span></h2>
-    <p class="section-body reveal">Rows &amp; Columns is organized by a small independent board of three — practitioners and community leaders with deep roots in data infrastructure. Backed by ClickHouse, with an independent program committee and blind CFP review.</p>
+    <p class="section-body reveal">Rows &amp; Columns is organized by a small independent board of three including practitioners and community leaders with deep roots in data infrastructure. Backed by ClickHouse, with an independent program committee and blind CFP review.</p>
     <div class="board-grid">
 
       <div class="board-card reveal">
@@ -197,10 +205,10 @@
       </div>
 
       <div class="board-card reveal">
-        <div class="board-avatar" style="background: rgba(46,196,196,0.15); color: var(--teal);">Z</div>
+        <img src="zoe.jpg" alt="Zoes image" style="width: 150px; height: 150px; object-fit: contain; flex-shrink: 0;">
         <div class="board-name">Zoe Steinkamp</div>
         <div class="board-company" style="color: var(--teal);">ClickHouse</div>
-        <div class="board-bio">Senior Developer Advocate at ClickHouse focused on real-time analytics and OLAP. Active conference speaker across the data community with a background in software engineering.</div>
+        <div class="board-bio">Senior Developer Advocate at ClickHouse focused on amazing open source databases and in person community events. Active agent of chaos across the data community with a background in problem solving and engineering.</div>
       </div>
 
       <div class="board-card reveal">
@@ -223,21 +231,12 @@
       people who <span style="color: var(--teal);">build</span> the stack.
     </h2>
     <p class="apply-body reveal">
-      Rows &amp; Columns draws 300–400 application-only practitioners — data engineers, architects, and platform leads who evaluate and choose the tools their companies run on. Sponsorship puts you in the room, not just on a banner.
+      Rows &amp; Columns Summit is a brand new conference drawing 400+ attendees, welcoming data engineers, architects, and platform leads who evaluate and choose the tools their companies run on. Sponsorship is a great oppurtunity to get your name out there and build brand recognition. 
     </p>
-    <a href="mailto:hello@rowsandcolumnssummit.com" class="btn-primary reveal" style="font-size:1.05rem; padding: 1rem 2.5rem;">Get the sponsor deck →</a>
-    <p class="apply-note reveal">Coffee cart · Happy hour bar · Headshot zone · Outdoor terrace</p>
+    <a href="rows-columns-sponsor-deck.pdf" target="_blank">Get the sponsor deck →</a>
   </div>
 </section>
 
-<!-- SPONSORS -->
-<section class="sponsors-section" id="sponsors">
-  <div class="sponsors-inner">
-    <p style="text-align:center; font-size: 0.88rem; color: var(--text-muted);">
-      Interested in sponsoring? <a href="mailto:hello@rowsandcolumnssummit.com" style="color: var(--teal); text-decoration: none;">Get in touch →</a>
-    </p>
-  </div>
-</section>
 
 <!-- FOOTER -->
 <footer>
@@ -248,7 +247,7 @@
       <li><a href="#program">Program</a></li>
       <li><a href="#apply">Apply</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
-      <li><a href="#">Code of Conduct</a></li>
+      <li><a href="code-of-conduct.html">Code of Conduct</a></li>
     </ul>
     <div class="footer-right">Sep 24, 2026 · San Francisco</div>
   </div>

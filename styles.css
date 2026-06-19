@@ -759,3 +759,216 @@
     .reveal { transition: none; opacity: 1; transform: none; }
     .hero-query .cursor { animation: none; }
   }
+
+    .coc-hero {
+    padding: 8rem 3rem 4rem;
+    border-bottom: 1px solid rgba(46, 196, 196, 0.12);
+  }
+
+  .coc-hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .coc-body {
+    padding: 4rem 3rem 6rem;
+  }
+
+  .coc-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .coc-section {
+    margin-bottom: 3rem;
+  }
+
+  .coc-section h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(46, 196, 196, 0.15);
+  }
+
+  .coc-section h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  .coc-section p {
+    font-size: 0.97rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .coc-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .coc-section ul li {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  .coc-section ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: rgba(46, 196, 196, 0.4);
+  }
+
+  .coc-section ul li strong {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  /* Notice box */
+  .notice-box {
+    background: rgba(245, 194, 107, 0.07);
+    border: 1px solid rgba(245, 194, 107, 0.25);
+    border-radius: 8px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 3rem;
+  }
+
+  .notice-box .notice-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+
+  .notice-box p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .notice-box p em {
+    color: var(--white);
+    font-style: normal;
+  }
+
+  /* Response matrix table */
+  .matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0 1.5rem;
+    font-size: 0.88rem;
+  }
+
+  .matrix-table th {
+    background: rgba(46, 196, 196, 0.08);
+    color: var(--teal);
+    font-family: 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(46, 196, 196, 0.2);
+  }
+
+  .matrix-table td {
+    padding: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: top;
+  }
+
+  .matrix-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .matrix-table td:first-child {
+    color: var(--white);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .level-1 td:first-child { color: var(--teal); }
+  .level-2 td:first-child { color: var(--gold); }
+  .level-3 td:first-child { color: var(--coral); }
+
+  .matrix-table tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  /* Numbered steps */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(46, 196, 196, 0.12);
+    color: var(--teal);
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .step-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .step-text strong { color: var(--white); }
+
+  /* Confidentiality callout */
+  .callout {
+    background: var(--navy-mid);
+    border-left: 3px solid var(--rose);
+    border-radius: 0 6px 6px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+
+  .callout p {
+    margin: 0;
+    font-size: 0.93rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .callout strong { color: var(--rose); }
+
+  @media (max-width: 768px) {
+    .coc-hero { padding: 7rem 1.5rem 3rem; }
+    .coc-body { padding: 3rem 1.5rem 4rem; }
+    .matrix-table { font-size: 0.8rem; }
+    .matrix-table th, .matrix-table td { padding: 0.6rem 0.75rem; }
+  }
