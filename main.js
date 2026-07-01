@@ -2,12 +2,13 @@
   const queries = [
     [
       { text: 'SELECT ', cls: 'keyword' },
-      { text: 'purpose_built', cls: '' },
-      { text: ' FROM ', cls: 'keyword' },
-      { text: 'data_architecture', cls: '' },
-      { text: ' WHERE ', cls: 'keyword' },
-      { text: 'scale = ', cls: '' },
-      { text: "'hard'", cls: 'string' },
+      { text: '* ', cls: '' },
+      { text: 'FROM ', cls: 'keyword' },
+      { text: 'transactions ', cls: '' },
+      { text: 'JOIN ', cls: 'keyword' },
+      { text: 'analytics ', cls: '' },
+      { text: 'USING ', cls: 'keyword' },
+      { text: '(data)', cls: '' },
     ]
   ];
 
